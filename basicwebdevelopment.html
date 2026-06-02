@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Development Project</title>
+
+    <style>
+
+        /* =========================
+           GENERAL STYLING
+        ========================== */
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            background-color:#f4f4f4;
+            color:#333;
+        }
+
+        /* =========================
+           HEADER SECTION
+        ========================== */
+
+        header{
+            background-color:#4CAF50;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        header h1{
+            margin:0;
+            font-size:40px;
+        }
+
+        header p{
+            font-size:18px;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav{
+            background-color:#333;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        /* =========================
+           MAIN CONTENT
+        ========================== */
+
+        .container{
+            width:80%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin-top:20px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img{
+            width:100%;
+            max-width:400px;
+            border-radius:10px;
+            display:block;
+            margin:auto;
+        }
+
+        h2{
+            color:#4CAF50;
+        }
+
+        p{
+            line-height:1.8;
+        }
+
+        /* =========================
+           BUTTON STYLING
+        ========================== */
+
+        button{
+            background-color:#4CAF50;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            font-size:18px;
+            border-radius:5px;
+            cursor:pointer;
+            margin-top:15px;
+        }
+
+        button:hover{
+            background-color:#45a049;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer{
+            background-color:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+        <h1>Basics of Web Development</h1>
+        <p>HTML | CSS | JavaScript Project</p>
+    </header>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <div class="container">
+
+        <!-- About HTML -->
+        <div class="card">
+
+            <h2>Introduction to HTML</h2>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                It is used to create the structure of webpages
+                using headings, paragraphs, images, links, tables,
+                forms, and many more elements.
+            </p>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Image">
+
+        </div>
+
+        <!-- About CSS -->
+        <div class="card">
+
+            <h2>Introduction to CSS</h2>
+
+            <p>
+                CSS stands for Cascading Style Sheets.
+                It is used to style webpages by adding colors,
+                fonts, spacing, layouts, animations, and responsive designs.
+            </p>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Image">
+
+        </div>
+
+        <!-- About JavaScript -->
+        <div class="card">
+
+            <h2>Introduction to JavaScript</h2>
+
+            <p>
+                JavaScript is used to make webpages interactive.
+                It can handle button clicks, alerts, forms,
+                animations, calculations, and many dynamic features.
+            </p>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Image">
+
+            <!-- Button -->
+            <button onclick="showMessage()">
+                Click Me
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+        <p>Created for Web Development Task - 1</p>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        // Function for button click
+
+        function showMessage(){
+
+            alert("Hello! Welcome to Web Development Project.");
+
+        }
+
+    </script>
+
+</body>
+</html>
